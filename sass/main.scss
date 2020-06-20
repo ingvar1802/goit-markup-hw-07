@@ -1,103 +1,40 @@
 @import "./utils/variables";
+@import "./utils/button";
 @import "./base/normalize";
 @import "./components/logo";
+@import "./components/header/header-contacts";
 @import "./components/header/page-header";
 @import "./components/header/navigation";
-@import "./components/header/header-contacts";
+@import "./components/studio/section";
 @import "./components/studio/hero";
 @import "./components/studio/features";
 @import "./components/studio/works";
 @import "./components/studio/team";
 @import "./components/studio/clients";
 @import "./components/studio/modal";
+@import "./components/portfolio/filters";
+@import "./components/portfolio/portfolio";
 @import "./components/page-footer";
 
-
 body {
-    background-color: $primary-white-color;
-    color: $primary-text-color;
-  
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+  background-color: $primaryWhiteColor;
+  color: $primaryTextColor;
 
-  .button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-  
-    color: $primary-white-color;
-    background-color: $accent-color;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: transparent;
-    cursor: pointer;
-  }
-  
-  .secondary-button {
-    display: flex;
-    border-radius: 4px;
-  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 29px;
-    min-width: 200px;
-    height: 50px;
-  
-    color: $primary-white-color;
-    background-color: $accent-color;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: transparent;
-    cursor: pointer;
-  }
-  
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-  .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-  
-    color: $primary-text-color;
-  
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-  }
-  
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
