@@ -1,0 +1,30 @@
+.contacts {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    color: $secondary-text-color;
+  
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:hover .icon-item,
+  &:focus .icon-item {
+    fill: $accent-color;
+  }
+  
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  
+  .icon-item {
+    margin-right: 10px;
+    align-self: center;
+    fill: $secondary-text-color;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
