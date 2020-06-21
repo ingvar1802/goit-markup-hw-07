@@ -15,6 +15,10 @@
     border-radius: 5px 5px 0px 0px;
   }
 
+  & > .links {
+    text-decoration: none;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -38,12 +42,12 @@
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.flex-element:hover .image-overlay,
-.flex-element:focus .image-overlay {
-  transform: translateY(0);
-  opacity: 1;
+  .flex-element:hover &,
+  .flex-element:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .project-info {
@@ -53,7 +57,7 @@
 
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0.03em;
+  letter-spacing: $letterSpacing;
   color: $primaryWhiteColor;
 }
 
@@ -62,10 +66,6 @@
   border: 1px solid #eeeeee;
   border-top: none;
   border-radius: 0px 0px 5px 5px;
-}
-
-.flex-element > .links {
-  text-decoration: none;
 }
 
 .port-titles {

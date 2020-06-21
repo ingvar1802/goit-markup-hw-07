@@ -3,14 +3,14 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-}
 
-.clients-list > .element {
-  display: flex;
-}
+  & > .element {
+    display: flex;
+  }
 
-.clients-list .element:not(:last-child) {
-  margin-right: 30px;
+  & .element:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .client-links-bg {
@@ -24,20 +24,20 @@
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client-links-bg:hover,
-.client-links-bg:focus {
-  border: 1px solid $accentColor;
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+  }
 }
 
 .clients-links {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client-links-bg:hover .clients-links,
-.client-links-bg:focus .clients-links {
-  fill: $accentColor;
+  .client-links-bg:hover &,
+  .client-links-bg:focus & {
+    fill: #2196f3;
+  }
 }
